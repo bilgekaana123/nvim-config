@@ -8,7 +8,7 @@ M.base_30 = {
   one_bg = "#2d2c3c", -- real bg of onedark
   one_bg2 = "#363545",
   one_bg3 = "#3e3d4d",
-  grey = "#474656",
+  grey = "#6b6b77",
   grey_fg = "#4e4d5d",
   grey_fg2 = "#555464",
   light_grey = "#605f6f",
@@ -24,7 +24,7 @@ M.base_30 = {
   teal = "#B5E8E0",
   orange = "#F8BD96",
   cyan = "#5de3ff", -- Links
-  statusline_bg = "#232232",
+  statusline_bg = "#2d2c3c",
   lightbg = "#2f2e3e",
   pmenu_bg = "#ABE9B3",
   folder_bg = "#89B4FA",
@@ -34,7 +34,7 @@ M.base_30 = {
 M.base_16 = {
   base00 = "#2f2f37",
   base01 = "#282737",
-  base02 = "#2f2e3e",
+  base02 = "#4a485a",
   base03 = "#383747",
   base04 = "#414050",
   base05 = "#D9E0EE",
@@ -53,14 +53,13 @@ M.base_16 = {
 M.polish_hl = {
 
   treesitter = {
-    ["Visual"] = { bg = "#4e4d5d", fg = "#D9E0EE" },
     ["@variable"] = { fg = M.base_30.green }, -- variables
     ["@tag"] = { fg = M.base_30.green }, -- variables
     ["@tag.builtin"] = { fg = M.base_30.blue }, -- variables
     ["@variable.member"] = { fg = M.base_30.white }, -- variables
     ["@function.method.call"] = { fg = M.base_30.purple },
     ["@function.call"] = { fg = M.base_30.purple },
-    ["@property"] = { fg = M.base_30.teal }, -- Properties
+    ["@property"] = { fg = M.base_30.green }, -- Properties
     ["@variable.builtin"] = { fg = M.base_30.purple }, -- Built-in variables
     ["@variable.parameter"] = { fg = M.base_30.white }, -- Built-in variables
     ["@function"] = { fg = M.base_30.purple }, -- Functions
@@ -93,6 +92,7 @@ M.polish_hl = {
 }
 
 M.type = "dark"
+
 
 M = require("base46").override_theme(M, "clerk")
 

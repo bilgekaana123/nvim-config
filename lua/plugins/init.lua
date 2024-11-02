@@ -30,7 +30,7 @@ return {
     event = "User FilePost",
     opts = {
       indent = { char = "│", highlight = "IblChar" },
-      scope = { char = "│", highlight = "IblScopeChar" },
+      scope = { enabled = false },
     },
     config = function(_, opts)
       dofile(vim.g.base46_cache .. "blankline")
