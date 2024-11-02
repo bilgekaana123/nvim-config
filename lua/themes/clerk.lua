@@ -2,7 +2,7 @@ local M = {}
 
 M.base_30 = {
   white = "#D9E0EE",
-  darker_black = "#191828",
+  darker_black = "#1f1f23",
   black = "#1E1D2D", -- nvim bg
   black2 = "#252434",
   one_bg = "#2d2c3c", -- real bg of onedark
@@ -27,7 +27,7 @@ M.base_30 = {
   statusline_bg = "#2d2c3c",
   lightbg = "#2f2e3e",
   pmenu_bg = "#ABE9B3",
-  folder_bg = "#89B4FA",
+  folder_bg = "#95b6c4",
   lavender = "#9394a1", -- Comments
 }
 
@@ -92,6 +92,7 @@ M.polish_hl = {
 }
 
 M.type = "dark"
+
 
 M = require("base46").override_theme(M, "clerk")
 

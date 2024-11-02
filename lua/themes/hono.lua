@@ -8,7 +8,7 @@ M.base_30 = {
   one_bg = "#282c34", -- real bg of onedark
   one_bg2 = "#353b45",
   one_bg3 = "#373b43",
-  grey = "#42464e",
+  grey = "#6a737d",
   grey_fg = "#565c64",
   grey_fg2 = "#6f737b",
   light_grey = "#6f737b",
@@ -84,7 +84,8 @@ M.polish_hl = {
 
     ["@string"] = { fg = M.base_30.blue },
     ["@operator"] = { fg = M.base_30.white },
-    ["@spell"] = { fg = M.base_30.gray },
+    ["@none"] = { fg = M.base_30.white },
+    ["@comment"] = { fg = M.base_30.grey },
     ["@boolean"] = { fg = M.base_30.blue },
 
 
