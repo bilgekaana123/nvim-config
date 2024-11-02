@@ -6,7 +6,7 @@
 local M = {}
 
 M.base46 = {
-	theme = "hono",
+	theme = "vscode_dark",
   transparency = false,
 
   -- hl_override = {

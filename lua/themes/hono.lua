@@ -30,7 +30,7 @@ M.base_30 = {
   statusline_bg = "#22262e",
   lightbg = "#2d3139",
   pmenu_bg = "#61afef",
-  folder_bg = "#61afef",
+  folder_bg = "#b7b9bd",
 }
 
 M.base_16 = {
