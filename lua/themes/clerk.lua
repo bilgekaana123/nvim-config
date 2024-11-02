@@ -93,7 +93,6 @@ M.polish_hl = {
 
 M.type = "dark"
 
-
 M = require("base46").override_theme(M, "clerk")
 
 return M
