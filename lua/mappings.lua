@@ -1,8 +1,15 @@
 require "nvchad.mappings"
 
+local map = vim.keymap.set
 -- add yours here
 
-local map = vim.keymap.set
+
+-- Move line up with Alt+K
+map("n", "<A-k>", ":m .-2<CR>==", { desc = "Move line up" })
+
+-- Move line down with Alt+J
+map("n", "<A-j>", ":m .+1<CR>==", { desc = "Move line down" })
+
 
 map("n", ";", ":", { desc = "CMD enter command mode" })
 map("i", "jk", "<ESC>")
