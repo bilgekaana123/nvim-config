@@ -23,7 +23,7 @@ M.base_30 = {
   yellow = "#e7c787",
   sun = "#EBCB8B",
   purple = "#b392f0",
-  dark_purple = "#c882e7",
+  dark_purple = "#b392f0",
   teal = "#519ABA",
   orange = "#ffab70",
   cyan = "#a3b8ef",
@@ -48,7 +48,7 @@ M.base_16 = {
   base0B = "#98c379",
   base0C = "#56b6c2",
   base0D = "#F97583",
-  base0E = "#c678dd",
+  base0E = "#b392f0",
   base0F = "#be5046",
 }
 
@@ -75,6 +75,7 @@ M.polish_hl = {
 
     ["@variable"] = { fg = M.base_30.white },
     ["@variable.member"] = { fg = M.base_30.orange },
+    ["@variable.builtin"] = { fg = M.base_30.purple },
     ["@variable.parameter"] = { fg = M.base_30.orange },
 
     ["@tag"] = { fg = M.base_30.blue },
