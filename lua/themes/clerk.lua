@@ -61,7 +61,7 @@ M.polish_hl = {
     ["@function.call"] = { fg = M.base_30.purple },
     ["@property"] = { fg = M.base_30.green }, -- Properties
     ["@variable.builtin"] = { fg = M.base_30.purple }, -- Built-in variables
-    ["@variable.parameter"] = { fg = M.base_30.white }, -- Built-in variables
+    ["@variable.parameter"] = { fg = M.base_30.green }, -- Built-in variables
     ["@function"] = { fg = M.base_30.purple }, -- Functions
     ["@keyword"] = { fg = M.base_30.purple }, -- Keywords
     ["@keyword.Import"] = { fg = M.base_30.purple }, -- Keywords Import
@@ -88,6 +88,7 @@ M.polish_hl = {
     ["@debug"] = { fg = M.base_30.red }, -- Debug statements
     ["@storageclass"] = { fg = M.base_30.teal }, -- Storage class (e.g., static, extern)
     ["@preproc"] = { fg = M.base_30.orange }, -- Preprocessor
+    ["@constant.builtin"] = { fg = M.base_30.green }, -- Preprocessor
   },
 }
 

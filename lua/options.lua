@@ -10,6 +10,8 @@ o.clipboard = "unnamedplus"
 o.cursorline = true
 o.cursorlineopt = "number"
 
+
+
 -- Enable line wrapping
 o.wrap = true
 o.breakindent = true
@@ -38,6 +40,9 @@ o.ruler = false
 opt.shortmess:append "sI"
 
 o.signcolumn = "yes"
+o.background = "dark"
+o.termguicolors = true
+
 o.splitbelow = true
 o.splitright = true
 o.timeoutlen = 400
@@ -71,5 +76,6 @@ local is_windows = vim.fn.has "win32" ~= 0
 local sep = is_windows and "\\" or "/"
 local delim = is_windows and ";" or ":"
 vim.env.PATH = table.concat({ vim.fn.stdpath "data", "mason", "bin" }, sep) .. delim .. vim.env.PATH
+
 
 

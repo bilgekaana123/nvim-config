@@ -34,7 +34,7 @@ M.base_30 = {
 }
 
 M.base_16 = {
-  base00 = "#2a2a2a",
+  base00 = "#1a1a1a",
   base01 = "#353b45",
   base02 = "#3e4451",
   base03 = "#545862",
@@ -55,6 +55,8 @@ M.base_16 = {
 
 
 M.polish_hl = {
+
+  CursorLine = { bg = M.base_30.black },
 
   treesitter = {
     ["@function"] = { fg = M.base_30.purple },
