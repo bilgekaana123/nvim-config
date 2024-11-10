@@ -16,9 +16,39 @@ for _, lsp in ipairs(servers) do
   }
 end
 
--- configuring single server, example: typescript
--- lspconfig.ts_ls.setup {
---   on_attach = nvlsp.on_attach,
---   on_init = nvlsp.on_init,
---   capabilities = nvlsp.capabilities,
--- }
+vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
+    vim.lsp.diagnostic.on_publish_diagnostics, {
+        virtual_text = false
+    }
+)
+
+vim.diagnostic.config({
+  virtual_text = false,    -- Disable inline diagnostics text
+  severity_sort = true,    -- Sort by severity
+  float = {
+    border = "rounded",
+  },
+  -- Use this section to suppress specific messages
+  -- e.g., "unused variable" for Lua or other languages.
+  severity = {
+    min = vim.diagnostic.severity.WARN, -- Show only warnings and errors
+  },
+})
+
+-- Show all diagnostics on current line in floating window
+vim.api.nvim_set_keymap(
+  'n', '<Leader>d', ':lua vim.diagnostic.open_float()<CR>', 
+  { noremap = true, silent = true }
+)
+-- Go to next diagnostic (if there are multiple on the same line, only shows
+-- one at a time in the floating window)
+vim.api.nvim_set_keymap(
+  'n', '<Leader>n', ':lua vim.diagnostic.goto_next()<CR>',
+  { noremap = true, silent = true }
+)
+-- Go to prev diagnostic (if there are multiple on the same line, only shows
+-- one at a time in the floating window)
+vim.api.nvim_set_keymap(
+  'n', '<Leader>p', ':lua vim.diagnostic.goto_prev()<CR>',
+  { noremap = true, silent = true }
+)
