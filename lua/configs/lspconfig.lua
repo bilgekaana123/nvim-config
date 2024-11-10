@@ -52,3 +52,11 @@ vim.api.nvim_set_keymap(
   'n', '<Leader>p', ':lua vim.diagnostic.goto_prev()<CR>',
   { noremap = true, silent = true }
 )
+
+
+vim.cmd [[
+  highlight DiagnosticUnderlineError guisp=Red gui=undercurl
+  highlight DiagnosticUnderlineWarn guisp=Orange gui=undercurl
+  highlight DiagnosticUnderlineHint guisp=LightBlue gui=undercurl
+  highlight DiagnosticUnderlineInfo guisp=Green gui=undercurl
+]]
