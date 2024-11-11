@@ -207,6 +207,16 @@ return {
       "<cmd>Trouble qflist toggle<cr>",
       desc = "Quickfix List (Trouble)",
     },
+    },
   },
-},
+  {
+    'tzachar/highlight-undo.nvim',
+    opts = {
+      ...
+    },
+  },
+  {
+  "cappyzawa/trim.nvim",
+  opts = {}
+  }
 }
