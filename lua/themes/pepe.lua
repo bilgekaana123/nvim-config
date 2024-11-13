@@ -77,7 +77,7 @@ M.polish_hl = {
   },
 }
 
-M = require("base46").override_theme(M, "ayu_dark")
+M = require("base46").override_theme(M, "pepe")
 
 M.type = "dark"
 
