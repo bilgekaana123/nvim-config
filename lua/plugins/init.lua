@@ -18,7 +18,7 @@ return {
   { "nvchad/minty", cmd = { "Huefy", "Shades" } },
 
   {
-    "nvim-tree/nvim-web-devicons",
+    "nvimtree/nvim-web-devicons",
     opts = function()
       dofile(vim.g.base46_cache .. "devicons")
       return { override = require "nvchad.icons.devicons" }
@@ -77,7 +77,7 @@ return {
         sync_install = false,
         highlight = { enable = true },
         indent = { enable = true },
-      })
+        })
     end,
   },
  {
@@ -217,20 +217,4 @@ return {
   "cappyzawa/trim.nvim",
   opts = {}
   },
-{
-  {'romgrk/barbar.nvim',
-    dependencies = {
-      'lewis6991/gitsigns.nvim',
-      'nvim-tree/nvim-web-devicons',
-    },
-    init = function() vim.g.barbar_auto_setup = false end,
-    opts = {
-      -- lazy.nvim will automatically call setup for you. put your options here, anything missing will use the default:
-      -- animation = true,
-      -- insert_at_start = true,
-      -- …etc.
-    },
-    version = '^1.0.0', -- optional: only update when a new 1.x version is released
-  },
-}
 }
