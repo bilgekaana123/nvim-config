@@ -26,13 +26,13 @@ M.base_30 = {
   cyan = "#5de3ff", -- Links
   statusline_bg = "#2d2c3c",
   lightbg = "#2f2e3e",
-  pmenu_bg = "#ABE9B3",
+  pmenu_bg = "#61afef",
   folder_bg = "#95b6c4",
   lavender = "#9394a1", -- Comments
 }
 
 M.base_16 = {
-  base00 = "#2f2f37", -- 191919 secondary
+  base00 = "#2f2f37", -- 2f2f37 primary ,  191919 secondary
   base01 = "#282737",
   base02 = "#4a485a",
   base03 = "#383747",
