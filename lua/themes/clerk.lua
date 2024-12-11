@@ -26,7 +26,7 @@ M.base_30 = {
   cyan = "#5de3ff", -- Links
   statusline_bg = "#2d2c3c",
   lightbg = "#2f2e3e",
-  pmenu_bg = "#61afef",
+  pmenu_bg = "#5de3ff",
   folder_bg = "#95b6c4",
   lavender = "#9394a1", -- Comments
 }
@@ -59,6 +59,7 @@ M.polish_hl = {
     ["@variable.member"] = { fg = M.base_30.white }, -- variables
     ["@function.method.call"] = { fg = M.base_30.purple },
     ["@function.call"] = { fg = M.base_30.purple },
+    ["@function.call.tsx"] = { fg = M.base_30.green },
     ["@property"] = { fg = M.base_30.green }, -- Properties
     ["@variable.builtin"] = { fg = M.base_30.purple }, -- Built-in variables
     ["@variable.parameter"] = { fg = M.base_30.green }, -- Built-in variables
@@ -72,11 +73,12 @@ M.polish_hl = {
     ["@comment"] = { fg = M.base_30.lavender }, -- Comments
     ["@punctuation"] = { fg = "#b7b8c2" }, -- Punctuation
     ["@type"] = { fg = M.base_30.green }, -- Types
-    ["@type.builtin"] = { fg = M.base_30.green }, -- Types
+    ["@type.tsx"] = { fg = M.base_30.orange }, -- Types
+    ["@type.builtin.tsx"] = { fg = M.base_30.orange }, -- Types
     ["@boolean"] = { fg = M.base_30.white }, -- Booleans
     ["@number"] = { fg = M.base_30.orange }, -- Numbers
     ["@operator"] = { fg = M.base_30.white }, -- Operators
-    ["@constructor"] = { fg = M.base_30.cyan }, -- Constructors
+    ["@constructor"] = { fg = M.base_30.purple }, -- Constructors
     ["@method"] = { fg = M.base_30.purple }, -- Methods
     ["@namespace"] = { fg = M.base_30.yellow }, -- Namespaces
     ["@field"] = { fg = M.base_30.green }, -- Fields
@@ -89,6 +91,7 @@ M.polish_hl = {
     ["@storageclass"] = { fg = M.base_30.teal }, -- Storage class (e.g., static, extern)
     ["@preproc"] = { fg = M.base_30.orange }, -- Preprocessor
     ["@constant.builtin"] = { fg = M.base_30.green }, -- Preprocessor
+
   },
 }
 

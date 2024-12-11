@@ -34,7 +34,7 @@ M.base_30 = {
 }
 
 M.base_16 = {
-  base00 = "#2a2a2a",  -- 1a1a1a , 1c1c1c 
+  base00 = "#1c1c1c",  -- 1a1a1a , 1c1c1c 
   base01 = "#353b45",
   base02 = "#3e4451",
   base03 = "#545862",
@@ -106,6 +106,6 @@ M.polish_hl = {
 
 M.type = "dark"
 
-M = require("base46").override_theme(M, "hono")
+M = require("base46").override_theme(M, "jasper")
 
 return M

@@ -71,7 +71,8 @@ M.polish_hl = {
     ["@keyword.return"] = { fg = M.base_30.red},
     ["@keyword.function"] = { fg = M.base_30.red},
     ["@keyword"] = { fg = M.base_30.red},
-    ["@type.builtin.tsx"] = { fg = M.base_30.blue},
+    ["@keyword.conditional"] = { fg = M.base_30.red},
+    ["@type.builtin.tsx"] = { fg = M.base_30.orange},
 
 
   },
