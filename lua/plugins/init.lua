@@ -18,11 +18,12 @@ return {
   { "nvchad/minty", cmd = { "Huefy", "Shades" } },
 
   {
-    "nvimtree/nvim-web-devicons",
-    opts = function()
-      dofile(vim.g.base46_cache .. "devicons")
-      return { override = require "nvchad.icons.devicons" }
-    end,
+  "nvim-tree/nvim-web-devicons",
+  url = "git@github.com:nvim-tree/nvim-web-devicons.git", -- Enforces SSH
+  opts = function()
+    dofile(vim.g.base46_cache .. "devicons")
+    return { override = require "nvchad.icons.devicons" }
+  end,
   },
 
   {
@@ -234,4 +235,23 @@ return {
   "cappyzawa/trim.nvim",
   opts = {}
   },
+
+  {
+    "smoka7/multicursors.nvim",
+    event = "VeryLazy",
+    dependencies = {
+        'nvimtools/hydra.nvim',
+    },
+    opts = {},
+    cmd = { 'MCstart', 'MCvisual', 'MCclear', 'MCpattern', 'MCvisualPattern', 'MCunderCursor' },
+    keys = {
+        {
+            mode = { 'v', 'n' },
+            '<Leader>m',
+            '<cmd>MCstart<cr>',
+            desc = 'Create a selection for selected text or word under the cursor',
+        },
+    },
+}
+
 }
