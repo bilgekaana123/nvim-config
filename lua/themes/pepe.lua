@@ -44,7 +44,7 @@ M.base_16 = {
   base07 = "#D9D7CE",
   base08 = "#c9c7be",
   base09 = "#FFEE99",
-  base0A = "#56c3f9",
+  base0A = "#5A8BBE",
   base0B = "#AAD84C",
   base0C = "#FFB454",
   base0D = "#F07174",
@@ -63,8 +63,8 @@ M.polish_hl = {
     ["@type.builtin.typescript"] = { fg = M.base_30.blue},
     ["@tag.builtin"] = { fg = M.base_30.green},
     ["@tag.attribute"] = { fg = M.base_30.blue},
-    ["@function"] = { fg = M.base_30.orange},
-    ["@function.call.tsx"] = { fg = M.base_30.purple},
+    ["@function"] = { fg = M.base_30.purple},
+    ["@function.call.tsx"] = { fg = M.base_30.orange},
     ["@function.method.call"] = { fg = M.base_30.purple},
     ["@punctuation.bracket"] = { fg = M.base_30.white},
     ["@punctuation.delimiter"] = { fg = M.base_30.white},
@@ -72,7 +72,7 @@ M.polish_hl = {
     ["@keyword.function"] = { fg = M.base_30.red},
     ["@keyword"] = { fg = M.base_30.red},
     ["@keyword.conditional"] = { fg = M.base_30.red},
-    ["@type.builtin.tsx"] = { fg = M.base_30.orange},
+    ["@type.builtin.tsx"] = { fg = M.base_30.blue},
 
 
   },
