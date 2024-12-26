@@ -2,14 +2,25 @@ local opt = vim.opt
 local o = vim.o
 local g = vim.g
 
+o.signcolumn = "yes"
+o.background = "dark"
+o.termguicolors = true
+
+--
+-- -- Set cursor color to green
+-- vim.cmd([[
+--   highlight Cursor guifg=green guibg=green
+-- ]])
+--
+-- -- Set cursor style
+-- opt.guicursor = 'n-v-c:block-Cursor,i-ci-ve:ver25-Cursor,r-cr-o:hor20-Cursor'
+--
 
 o.relativenumber = true
-
 
 o.clipboard = "unnamedplus"
 o.cursorline = true
 o.cursorlineopt = "number"
-
 
 
 -- Enable line wrapping
@@ -38,10 +49,6 @@ o.ruler = false
 
 -- disable nvim intro
 opt.shortmess:append "sI"
-
-o.signcolumn = "yes"
-o.background = "dark"
-o.termguicolors = true
 
 o.splitbelow = true
 o.splitright = true
