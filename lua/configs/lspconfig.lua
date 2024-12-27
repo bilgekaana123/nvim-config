@@ -16,6 +16,24 @@ for _, lsp in ipairs(servers) do
   }
 end
 
+-- Setup Emmet LS
+lspconfig.emmet_ls.setup({
+  capabilities = nvlsp.capabilities,
+  filetypes = { "html", "css", "javascript", "javascriptreact", "typescriptreact", "vue", "svelte" },
+  init_options = {
+    html = {
+      options = {
+        ["bem.enabled"] = true, -- Enable BEM syntax
+      },
+    },
+  },
+  on_attach = function(client, bufnr)
+    -- Additional key mappings for Emmet, if needed
+    nvlsp.on_attach(client, bufnr)
+  end,
+})
+
+
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
     vim.lsp.diagnostic.on_publish_diagnostics, {
         virtual_text = false

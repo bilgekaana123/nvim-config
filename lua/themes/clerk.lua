@@ -65,7 +65,7 @@ M.polish_hl = {
     ["@variable.parameter"] = { fg = M.base_30.green }, -- Built-in variables
     ["@function"] = { fg = M.base_30.purple }, -- Functions
     ["@keyword"] = { fg = M.base_30.purple }, -- Keywords
-    ["@keyword.Import"] = { fg = M.base_30.purple }, -- Keywords Import
+    ["@keyword.import"] = { fg = M.base_30.purple }, -- Keywords Import
     ["@Includes"] = { fg = M.base_30.purple },
     ["@string"] = { fg = M.base_30.blue }, -- Strings
     ["@constant"] = { fg = M.base_30.green }, -- Constants
