@@ -7,6 +7,10 @@ return {
     end,
   },
   {
+  "karb94/neoscroll.nvim",
+  opts = {},
+  },
+  {
   "nvzone/showkeys",
   cmd = "ShowkeysToggle",
   opts = {
