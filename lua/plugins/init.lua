@@ -90,27 +90,27 @@ return {
         sync_install = false,
         highlight = { enable = true },
         indent = { enable = true },
-        })
+  })
     end,
   },
--- {
---   "nvim-tree/nvim-tree.lua",
---   config = function()
---     require("nvim-tree").setup({
---       view = {
---         side = "right",  -- Set the file explorer to open on the right side
---       },
---       disable_netrw = true,
---       hijack_netrw = true,
---       renderer = {
---         highlight_opened_files = "all",
---       },
---       indent_markers = {
---        enable = false,
---       },
---     })
---   end,
--- },
+  --- {
+---   "nvim-tree/nvim-tree.lua",
+---   config = function()
+---     require("nvim-tree").setup({
+---       view = {
+---         side = "right",  -- Set the file explorer to open on the right side
+---       },
+---       disable_netrw = true,
+---       hijack_netrw = true,
+---       renderer = {
+---         highlight_opened_files = "all",
+---       },
+---       indent_markers = {
+---        enable = false,
+---       },
+---     })
+---   end,
+--- },
  {
     "windwp/nvim-ts-autotag",
     dependencies = { "nvim-treesitter/nvim-treesitter" },
@@ -192,16 +192,6 @@ return {
   { "anuvyklack/fold-preview.nvim", dependencies = "anuvyklack/keymap-amend.nvim", config = true
   },
   {
-    "kylechui/nvim-surround",
-    version = "*", -- Use for stability; omit to use `main` branch for the latest features
-    event = "VeryLazy",
-    config = function()
-        require("nvim-surround").setup({
-            -- Configuration here, or leave empty to use defaults
-        })
-    end
-  },
-  {
   "folke/trouble.nvim",
   opts = {}, -- for default options, refer to the configuration section for custom setup.
   cmd = "Trouble",
@@ -267,24 +257,9 @@ return {
     },
 },
 {
-    "kdheepak/lazygit.nvim",
-    lazy = true,
-    cmd = {
-        "LazyGit",
-        "LazyGitConfig",
-        "LazyGitCurrentFile",
-        "LazyGitFilter",
-        "LazyGitFilterCurrentFile",
-    },
-    -- optional for floating window border decoration
-    dependencies = {
-        "nvim-lua/plenary.nvim",
-    },
-    -- setting the keybinding for LazyGit with 'keys' is recommended in
-    -- order to load the plugin when the command is run for the first time
-    keys = {
-        { "<leader>lg", "<cmd>LazyGit<cr>", desc = "LazyGit" }
-    }
-}
-
+  'echasnovski/mini.surround',
+  version = false,
+  lazy = false,
+  config = true,
+},
 }

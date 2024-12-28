@@ -53,7 +53,7 @@ M.base_16 = {
 M.polish_hl = {
 
   treesitter = {
-    ["@variable"] = { fg = M.base_30.green },  -- Variables
+    ["@variable"] = { fg = M.base_30.white },  -- Variables
     ["@tag"] = { fg = M.base_30.green },  -- Variables
     ["@tag.builtin"] = { fg = M.base_30.blue },  -- Variables
     ["@variable.member"] = { fg = M.base_30.white },  -- Variables
@@ -70,7 +70,7 @@ M.polish_hl = {
     ["@string"] = { fg = M.base_30.blue },  -- Strings
     ["@constant"] = { fg = M.base_30.green },  -- Constants
     ["@parameter"] = { fg = M.base_30.green },  -- Parameters
-    ["@comment"] = { fg = M.base_30.lavender },  -- Comments
+    ["@comment"] = { fg = M.base_30.grey_fg },  -- Comments
     ["@punctuation"] = { fg = "#C5C5D4" },  -- Punctuation
     ["@type"] = { fg = M.base_30.green },  -- Types
     ["@type.builtin.tsx"] = { fg = M.base_30.orange },  -- Types
