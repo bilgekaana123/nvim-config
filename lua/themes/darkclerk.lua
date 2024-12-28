@@ -91,6 +91,7 @@ M.polish_hl = {
     ["@preproc"] = { fg = M.base_30.orange },  -- Preprocessor
     ["@constant.builtin"] = { fg = M.base_30.green },
     ["@type.tsx"] = { fg = M.base_30.purple },
+    ["@markup.heading"] = { fg = M.base_30.white },
   },
 }
 

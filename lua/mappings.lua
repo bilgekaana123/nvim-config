@@ -26,3 +26,16 @@ map("n", "<RightMouse>", function()
   local options = vim.bo.ft == "NvimTree" and "nvimtree" or "default"
   require("menu").open(options, { mouse = true })
 end, {})
+
+
+ -- Added After For me 
+map('n', '<leader>fg', function()
+  require('telescope.builtin').git_files({
+    hidden = true,
+    search_dirs = { '.' },
+    additional_args = function()
+      return { '--glob', '!.git', '--glob', '!node_modules/*' }  -- Exclude node_modules
+    end,
+  })
+end, { desc = 'Find Git Files' })
+
