@@ -66,6 +66,7 @@ M.polish_hl = {
     ["@function"] = { fg = M.base_30.purple },  -- Functions
     ["@keyword"] = { fg = M.base_30.purple },  -- Keywords
     ["@keyword.import.tsx"] = { fg = M.base_30.purple },  -- Keywords Import
+    ["@keyword.import.typescript"] = { fg = M.base_30.purple },  -- Keywords Import
     ["@Includes"] = { fg = M.base_30.purple },
     ["@string"] = { fg = M.base_30.blue },  -- Strings
     ["@constant"] = { fg = M.base_30.green },  -- Constants
@@ -73,7 +74,9 @@ M.polish_hl = {
     ["@comment"] = { fg = M.base_30.grey_fg },  -- Comments
     ["@punctuation"] = { fg = "#C5C5D4" },  -- Punctuation
     ["@type"] = { fg = M.base_30.green },  -- Types
+    ["@type.typescript"] = { fg = M.base_30.orange },  -- Types
     ["@type.builtin.tsx"] = { fg = M.base_30.orange },  -- Types
+    ["@type.builtin.typescript"] = { fg = M.base_30.orange },  -- Types
     ["@boolean"] = { fg = M.base_30.white },  -- Booleans
     ["@number"] = { fg = M.base_30.orange },  -- Numbers
     ["@operator"] = { fg = M.base_30.white },  -- Operators

@@ -40,6 +40,18 @@ return {
   },
 
   {
+  "nvim-tree/nvim-tree.lua",
+  opts = function()
+    return {
+      view = {
+        side = "right", -- Open the tree on the right side
+        width = 30,     -- Adjust the width of the tree
+      },
+    }
+  end,
+},
+
+  {
     "lukas-reineke/indent-blankline.nvim",
     event = "User FilePost",
     opts = {
@@ -93,24 +105,6 @@ return {
   })
     end,
   },
-  --- {
----   "nvim-tree/nvim-tree.lua",
----   config = function()
----     require("nvim-tree").setup({
----       view = {
----         side = "right",  -- Set the file explorer to open on the right side
----       },
----       disable_netrw = true,
----       hijack_netrw = true,
----       renderer = {
----         highlight_opened_files = "all",
----       },
----       indent_markers = {
----        enable = false,
----       },
----     })
----   end,
---- },
  {
     "windwp/nvim-ts-autotag",
     dependencies = { "nvim-treesitter/nvim-treesitter" },
