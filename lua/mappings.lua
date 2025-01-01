@@ -3,16 +3,15 @@ require "nvchad.mappings"
 local map = vim.keymap.set
 -- add yours here
 
+map("i", "jk", "<ESC>")
+map("i", "jj", "<ESC>")
 
--- Move line up with Alt+K
-map("n", "<A-k>", ":m .-2<CR>==", { desc = "Move line up" })
-
--- Move line down with Alt+J
-map("n", "<A-j>", ":m .+1<CR>==", { desc = "Move line down" })
-
+-- Move line down with Ctrl+J
+map("v", "<C-j>", ":m '>+1<CR>gv=gv", { desc = "Move line up" })
+-- Move line up with Ctrl+k
+map("v", "<C-k>", ":m '<-2<CR>gv=gv", { desc = "Move line down" })
 
 map("n", ";", ":", { desc = "CMD enter command mode" })
-map("i", "jk", "<ESC>")
 
 -- Keyboard users
 map("n", "<C-t>", function()
@@ -42,4 +41,4 @@ end, { desc = 'Find Git Files' })
 map("n", "<C-d>", "<C-d>zz", { noremap = true, silent = true, desc = "Scroll down and center" })
 map("n", "<C-u>", "<C-u>zz", { noremap = true, silent = true, desc = "Scroll up and center" })
 
-
+map("n", "<C-p>", '"0p', { noremap = true, silent = true, desc = "Paste from yank register" })

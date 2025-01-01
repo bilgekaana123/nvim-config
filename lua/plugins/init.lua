@@ -256,4 +256,9 @@ return {
   lazy = false,
   config = true,
 },
+  {
+    'ThePrimeagen/vim-be-good',
+    lazy = false, 
+
+  },
 }

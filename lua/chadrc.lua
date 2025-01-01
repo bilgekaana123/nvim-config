@@ -6,8 +6,8 @@
 local M = {}
 
 M.base46 = {
-	theme = "darkclerk",
-  transparency = false,
+	theme = "vimhero",
+
 
   -- hl_override = {
 	-- 	Comment = { italic = true },
