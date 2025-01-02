@@ -53,16 +53,16 @@ M.base_16 = {
 M.polish_hl = {
 
   treesitter = {
-    ["@variable"] = { fg = M.base_30.white },  -- Variables
+    ["@variable"] = { fg = M.base_30.green },  -- Variables
+    ["@variable.member"] = { fg = M.base_30.white },  -- Variables
+    ["@variable.builtin"] = { fg = M.base_30.purple },  -- Built-in variables
+    ["@variable.parameter"] = { fg = M.base_30.green },  -- Parameters
     ["@tag"] = { fg = M.base_30.green },  -- Variables
     ["@tag.builtin"] = { fg = M.base_30.blue },  -- Variables
-    ["@variable.member"] = { fg = M.base_30.white },  -- Variables
     ["@function.method.call"] = { fg = M.base_30.purple },
     ["@function.call"] = { fg = M.base_30.purple },
     ["@function.call.tsx"] = { fg = M.base_30.green },
     ["@property"] = { fg = M.base_30.green },  -- Properties
-    ["@variable.builtin"] = { fg = M.base_30.purple },  -- Built-in variables
-    ["@variable.parameter"] = { fg = M.base_30.green },  -- Parameters
     ["@function"] = { fg = M.base_30.purple },  -- Functions
     ["@keyword"] = { fg = M.base_30.purple },  -- Keywords
     ["@keyword.import.tsx"] = { fg = M.base_30.purple },  -- Keywords Import

@@ -6,8 +6,10 @@
 local M = {}
 
 M.base46 = {
-	theme = "vimhero",
-
+	theme = "solarized_osaka",
+  integrations = { "treesitter", "lsp", 'nvimtree', 'semantic_tokens' },
+  
+  transparency = false,
 
   -- hl_override = {
 	-- 	Comment = { italic = true },
